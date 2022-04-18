@@ -6,7 +6,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint --dir ./src"
+    "lint": "next lint --dir ./src",
+    "type-check": "tsc --noEmit",
+    "test": "jest",
+    "test-dev": "jest --watchAll",
+    "test-dev-cov": "jest --watchAll --coverage",
+    "test-ci": "jest --ci --coverage"
   },
   "dependencies": {
     "next": "12.1.5",
