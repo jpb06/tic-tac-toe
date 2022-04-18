@@ -1,0 +1,70 @@
+root: true
+
+parser: '@typescript-eslint/parser'
+
+parserOptions:
+  project: './tsconfig.json'
+
+plugins:
+  - '@typescript-eslint'
+  - jest
+  - jest-dom
+
+extends:
+  - next
+  - plugin:@typescript-eslint/recommended
+  - plugin:jest-dom/recommended
+  - plugin:import/typescript
+  - plugin:jest/recommended
+  - plugin:jest/style
+  - prettier
+
+rules:
+  curly:
+    - error
+    - all
+  '@typescript-eslint/explicit-function-return-type': off
+  '@typescript-eslint/explicit-member-accessibility': off
+  '@typescript-eslint/indent': off
+  '@typescript-eslint/member-delimiter-style': off
+  '@typescript-eslint/no-explicit-any': error
+  '@typescript-eslint/no-floating-promises':
+    - error
+    - ignoreVoid: true
+  '@typescript-eslint/no-var-requires': off
+  '@typescript-eslint/no-use-before-define': off
+  '@typescript-eslint/no-unused-vars':
+    - error
+    - argsIgnorePattern: '^_'
+  '@typescript-eslint/no-empty-interface': off
+  import/no-unresolved: off
+  import/order:
+    - error
+    - newlines-between: always
+      groups:
+        - builtin
+        - external
+        - internal
+        - [parent, sibling, index]
+      alphabetize:
+        order: 'asc'
+      pathGroups:
+        - pattern: '{@components/**,@type/**,@tests/**}'
+          group: internal
+          position: after
+      pathGroupsExcludedImportTypes:
+        - builtin
+  no-console:
+    - error
+    - allow: [warn, error]
+  react/react-in-jsx-scope: off
+  react/display-name: off
+  react/prop-types: off
+  jest/expect-expect:
+    - error
+    - assertFunctionNames:
+        - expect
+        - expect*
+        - waitForElementToBeRemoved
+        - screen.findBy*
+        - result.findBy*
