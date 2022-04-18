@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer utilities {
+  .text-shadow-white {
+    text-shadow: 0 0 0 white;
+  }
+  .text-shadow-sky {
+    text-shadow: 0 0 0 #0c4a6e;
+  }
+}
