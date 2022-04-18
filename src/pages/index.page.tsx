@@ -1,6 +1,6 @@
 import type { NextPage } from 'next';
 
-import { Home as HomeRoot } from '@components/simple';
+import { Home as HomeRoot } from '@components/pages-root/home/Home';
 
 const Home: NextPage = () => <HomeRoot />;
 
