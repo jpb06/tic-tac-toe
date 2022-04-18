@@ -4,4 +4,3 @@ export * from './text-with-emoji/TextWithEmoji';
 export * from './board/Board';
 export * from './game-status/GameStatus';
 export * from './title/Title';
-export * from './home/Home';
