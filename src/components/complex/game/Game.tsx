@@ -1,6 +1,6 @@
 import { Board, GameStatus, Reset } from '@components/simple';
 
-import { useGameState } from './hooks';
+import { useGameState } from './hooks/use-game-state/useGameState';
 
 export const Game = () => {
   const { handleMove, handleReset, status, nextPlayer, moves } = useGameState();
