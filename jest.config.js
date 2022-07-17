@@ -1,4 +1,9 @@
+const { transformTsPaths } = require('ts-paths-transform');
 const nextJest = require('next/jest');
+
+const {
+  compilerOptions: { paths },
+} = require('./tsconfig');
 
 const createJestConfig = nextJest({
   // Provide the path to your Next.js app to load next.config.js and .env files in your test environment
@@ -14,16 +19,27 @@ const customJestConfig = {
   globalSetup: '<rootDir>/jest/jest.setup.env.ts',
   setupFilesAfterEnv: ['<rootDir>/jest/jest.setup.js'],
   transform: {
-    // Use babel-jest to transpile tests with the next/babel preset
-    // https://jestjs.io/docs/configuration#transform-objectstring-pathtotransformer--pathtotransformer-object
-    '^.+\\.(js|jsx|ts|tsx)$': ['babel-jest', { presets: ['next/babel'] }],
+    '^.+\\.[tj]sx?$': [
+      '@swc/jest',
+      {
+        jsc: {
+          parser: {
+            syntax: 'typescript',
+          },
+          target: 'es2021',
+          transform: {
+            react: {
+              runtime: 'automatic',
+            },
+          },
+        },
+      },
+    ],
   },
-  moduleNameMapper: {
-    '^@components/(.*)$': '<rootDir>/src/components/$1',
-    '^@type/(.*)$': '<rootDir>/src/types/$1',
-    '^@tests/(.*)$': '<rootDir>/src/tests/$1',
-    '^@~/(.*)$': '<rootDir>/src/$1',
-  },
+  moduleNameMapper: transformTsPaths(paths, {
+    prefix: '<rootDir>/',
+    debug: true,
+  }),
   testEnvironment: 'jest-environment-jsdom',
   watchPlugins: [
     'jest-watch-typeahead/filename',
