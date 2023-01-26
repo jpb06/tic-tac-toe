@@ -18,11 +18,12 @@ export const useGameState = () => {
       return;
     }
 
-    moves[index] = nextPlayer;
-
     setNextPlayer(nextPlayer === '⭕' ? '❌' : '⭕');
-    setMoves(moves);
-    setStatus(getGameStatus(moves));
+    setMoves((current) => {
+      current[index] = nextPlayer;
+      setStatus(getGameStatus(current));
+      return current;
+    });
   };
 
   const handleReset = () => {

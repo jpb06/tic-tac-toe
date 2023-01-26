@@ -2,7 +2,7 @@
 
 [![Open in Visual Studio Code](https://img.shields.io/static/v1?logo=visualstudiocode&label=&message=Open%20in%20Visual%20Studio%20Code&labelColor=2c2c32&color=007acc&logoColor=007acc)](https://github.dev/jpb06/tic-tac-toe)
 [![Front deployment](https://img.shields.io/github/deployments/jpb06/tic-tac-toe/production?label=front%20deploy&logo=vercel&logoColor=white)](https://tic-tac-toe-jpb06.vercel.app)
-![Github workflow](https://img.shields.io/github/workflow/status/jpb06/tic-tac-toe/tests%20and%20sonarcloud%20scan?label=last%20workflow&logo=github-actions)
+![Github workflow](https://img.shields.io/github/actions/workflow/status/jpb06/tic-tac-toe/tests-scan.yml?branch=main&logo=github-actions&label=last%20workflow)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=jpb06_tic-tac-toe&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=jpb06_tic-tac-toe)
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=jpb06_tic-tac-toe&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=jpb06_tic-tac-toe)
 [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=jpb06_tic-tac-toe&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=jpb06_tic-tac-toe)
