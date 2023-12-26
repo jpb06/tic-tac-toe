@@ -1,4 +1,4 @@
-import { Player } from "@type/game.types";
+import type { Player } from "@type/game.types";
 
 import { TextWithEmoji } from "../..";
 

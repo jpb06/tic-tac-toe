@@ -1,4 +1,4 @@
-import { GameStatus, Moves, Player } from "@type/game.types";
+import { GameStatus, Moves, Player } from '@type/game.types';
 
 export const getGameStatus = (move: Moves): GameStatus => {
   const winConditions = [
@@ -21,8 +21,8 @@ export const getGameStatus = (move: Moves): GameStatus => {
   }
 
   if (!move.some((el) => el === null)) {
-    return "GameOver";
+    return 'GameOver';
   }
 
-  return "Ongoing";
+  return 'Ongoing';
 };

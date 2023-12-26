@@ -1,4 +1,4 @@
-import { Player, GameStatus as Status } from '@type/game.types';
+import type { Player, GameStatus as Status } from '@type/game.types';
 
 import { GameOver, Ongoing, OPlayerWin, XPlayerWin } from './children';
 

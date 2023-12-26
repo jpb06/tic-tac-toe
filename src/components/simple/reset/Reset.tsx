@@ -1,4 +1,4 @@
-import { GameStatus } from '@type/game.types';
+import type { GameStatus } from '@type/game.types';
 
 type ResetButtonProps = {
   onClick: () => void;

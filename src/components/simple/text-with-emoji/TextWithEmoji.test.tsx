@@ -1,4 +1,5 @@
 import { screen } from '@testing-library/react';
+import { describe, it, expect } from 'vitest';
 
 import { appRender } from '@tests/renders/appRender';
 
@@ -13,7 +14,7 @@ describe('TextWithEmoji component', () => {
     expect(screen.getByText(text)).toBeInTheDocument();
     expect(screen.getByText(text)).toHaveClass(
       'text-transparent',
-      'text-shadow-sky'
+      'text-shadow-sky',
     );
   });
 });

@@ -1,5 +1,5 @@
 import { Square } from '@components/simple';
-import { Moves } from '@type/game.types';
+import type { Moves } from '@type/game.types';
 
 type BoardProps = {
   onClick: (index: number) => void;

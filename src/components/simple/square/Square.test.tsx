@@ -1,11 +1,12 @@
 import { screen } from '@testing-library/react';
+import { describe, it, expect, vi } from 'vitest';
 
 import { appRender } from '@tests/renders/appRender';
 
 import { Square } from './Square';
 
 describe('Square component', () => {
-  const handleClick = jest.fn();
+  const handleClick = vi.fn();
 
   it('should display a button', () => {
     appRender(<Square value="❌" onClick={handleClick} />);
