@@ -1,4 +1,5 @@
 import { screen } from '@testing-library/react';
+import { describe, it, expect } from 'vitest';
 
 import { textContentMatcher } from '@tests/matchers/text-content.matcher';
 import { appRender } from '@tests/renders/appRender';
@@ -10,7 +11,7 @@ describe('GameStatus component', () => {
     appRender(<GameStatus nextPlayer="❌" status="Ongoing" />);
 
     expect(
-      screen.getByText(textContentMatcher('😼 Your turn ❌'))
+      screen.getByText(textContentMatcher('😼 Your turn ❌')),
     ).toBeInTheDocument();
   });
 
@@ -24,7 +25,7 @@ describe('GameStatus component', () => {
     appRender(<GameStatus nextPlayer="❌" status="⭕" />);
 
     expect(
-      screen.getByText(textContentMatcher('⭕ has won! Whooooo! 🔥'))
+      screen.getByText(textContentMatcher('⭕ has won! Whooooo! 🔥')),
     ).toBeInTheDocument();
   });
 
@@ -34,9 +35,9 @@ describe('GameStatus component', () => {
     expect(
       screen.getByText(
         textContentMatcher(
-          'So ❌ tried to win and he just did the absolute madman! 🎉'
-        )
-      )
+          'So ❌ tried to win and he just did the absolute madman! 🎉',
+        ),
+      ),
     ).toBeInTheDocument();
   });
 });

@@ -1,12 +1,13 @@
 import { screen } from '@testing-library/react';
+import { describe, it, expect, vi } from 'vitest';
 
 import { appRender } from '@tests/renders/appRender';
-import { Moves } from '@type/game.types';
+import type { Moves } from '@type/game.types';
 
 import { Board } from './Board';
 
 describe('Board component', () => {
-  const handleClick = jest.fn();
+  const handleClick = vi.fn();
 
   it('should display nine buttons', () => {
     const moves = Array(9).fill(null);
@@ -33,7 +34,7 @@ describe('Board component', () => {
     const buttons = screen.getAllByRole('button');
 
     expect(buttons).toHaveLength(9);
-    moves.map((value, index) => {
+    moves.forEach((value, index) => {
       expect(buttons[index]).toHaveTextContent(value ?? '');
     });
   });

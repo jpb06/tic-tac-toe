@@ -1,5 +1,5 @@
-export type Player = "⭕" | "❌";
+export type Player = '⭕' | '❌';
 
-export type Moves = Array<Player | null>;
+export type Moves = (Player | null)[];
 
-export type GameStatus = Player | "GameOver" | "Ongoing";
+export type GameStatus = Player | 'GameOver' | 'Ongoing';

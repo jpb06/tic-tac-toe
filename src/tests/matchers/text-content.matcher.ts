@@ -1,7 +1,7 @@
 import { MatcherFunction } from '@testing-library/react';
 
 export const textContentMatcher = (
-  textMatch: string | RegExp
+  textMatch: string | RegExp,
 ): MatcherFunction => {
   const hasText =
     typeof textMatch === 'string'
@@ -15,7 +15,7 @@ export const textContentMatcher = (
     }
 
     const childrenDontHaveText = Array.from(node?.children || []).every(
-      (child) => !hasText(child)
+      (child) => !hasText(child),
     );
 
     return childrenDontHaveText;

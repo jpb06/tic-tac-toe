@@ -1,12 +1,13 @@
 import { screen } from '@testing-library/react';
+import { describe, it, expect, vi } from 'vitest';
 
 import { appRender } from '@tests/renders/appRender';
-import { GameStatus } from '@type/game.types';
+import type { GameStatus } from '@type/game.types';
 
 import { Reset } from './Reset';
 
 describe('Reset component', () => {
-  const handleClick = jest.fn();
+  const handleClick = vi.fn();
 
   it('should not display the reset button when game is ongoing', () => {
     appRender(<Reset status="Ongoing" onClick={handleClick} />);

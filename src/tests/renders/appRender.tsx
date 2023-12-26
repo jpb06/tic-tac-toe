@@ -1,7 +1,8 @@
-import { render, RenderResult } from '@testing-library/react';
+import type { RenderResult } from '@testing-library/react';
+import { render } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { UserEvent } from '@testing-library/user-event/dist/types/setup/setup';
-import { ReactElement } from 'react';
+import type { UserEvent } from '@testing-library/user-event/dist/types/setup/setup';
+import type { ReactElement } from 'react';
 
 export interface AppRenderResult extends RenderResult {
   user: UserEvent;

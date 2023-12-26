@@ -1,4 +1,5 @@
 import { screen } from '@testing-library/react';
+import { describe, it, expect } from 'vitest';
 
 import { textContentMatcher } from '@tests/matchers/text-content.matcher';
 import { appRender } from '@tests/renders/appRender';
@@ -22,7 +23,7 @@ describe('Game component', () => {
     await Promise.all(
       gameWithNoWinner.map(async (index) => {
         await user.click(buttons[index]);
-      })
+      }),
     );
 
     expect(screen.getByText('☠️ Game over! ☠️')).toBeInTheDocument();
@@ -38,15 +39,15 @@ describe('Game component', () => {
     await Promise.all(
       gameWithXWinner.map(async (index) => {
         await user.click(buttons[index]);
-      })
+      }),
     );
 
     expect(
       screen.getByText(
         textContentMatcher(
-          'So ❌ tried to win and he just did the absolute madman! 🎉'
-        )
-      )
+          'So ❌ tried to win and he just did the absolute madman! 🎉',
+        ),
+      ),
     ).toBeInTheDocument();
     expect(screen.getByRole('button', { name: /replay/i })).toBeInTheDocument();
   });
@@ -60,11 +61,11 @@ describe('Game component', () => {
     await Promise.all(
       gameWithXWinner.map(async (index) => {
         await user.click(buttons[index]);
-      })
+      }),
     );
 
     expect(
-      screen.getByText(textContentMatcher('⭕ has won! Whooooo! 🔥'))
+      screen.getByText(textContentMatcher('⭕ has won! Whooooo! 🔥')),
     ).toBeInTheDocument();
     expect(screen.getByRole('button', { name: /replay/i })).toBeInTheDocument();
   });
@@ -78,7 +79,7 @@ describe('Game component', () => {
     await Promise.all(
       gameWithNoWinner.map(async (index) => {
         await user.click(buttons[index]);
-      })
+      }),
     );
 
     await user.click(buttons[0]);
@@ -109,7 +110,7 @@ describe('Game component', () => {
     await Promise.all(
       gameWithNoWinner.map(async (index) => {
         await user.click(buttons[index]);
-      })
+      }),
     );
 
     expect(screen.getByText('☠️ Game over! ☠️')).toBeInTheDocument();
@@ -121,16 +122,16 @@ describe('Game component', () => {
     await user.click(resetButton);
 
     expect(
-      screen.queryByRole('button', { name: '❌' })
+      screen.queryByRole('button', { name: '❌' }),
     ).not.toBeInTheDocument();
     expect(
-      screen.queryByRole('button', { name: '⭕' })
+      screen.queryByRole('button', { name: '⭕' }),
     ).not.toBeInTheDocument();
 
     expect(resetButton).not.toBeInTheDocument();
 
     expect(
-      screen.getByText(textContentMatcher('😼 Your turn ❌'))
+      screen.getByText(textContentMatcher('😼 Your turn ❌')),
     ).toBeInTheDocument();
   });
 });
