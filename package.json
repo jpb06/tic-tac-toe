@@ -14,7 +14,7 @@
     "test": "vitest",
     "test-ui": "vitest --ui",
     "test-dev-cov": "vitest --watch --coverage",
-    "test-ci": "vitest --ci --coverage",
+    "test-ci": "vitest --run --coverage --logHeapUsage",
     "sync-icons": "pnpm generateReadmeIcons -h 50"
   },
   "dependencies": {
@@ -38,6 +38,7 @@
     "@typescript-eslint/eslint-plugin": "^6.15.0",
     "@typescript-eslint/parser": "^6.15.0",
     "@vitejs/plugin-react": "^4.2.1",
+    "@vitest/coverage-v8": "^1.1.0",
     "@vitest/ui": "^1.1.0",
     "autoprefixer": "^10.4.14",
     "eslint": "^8.56.0",
