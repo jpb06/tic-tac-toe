@@ -1,5 +1,5 @@
-import type { PropsWithChildren } from "react";
+import type { PropsWithChildren } from 'react';
 
-export const TextWithEmoji = ({ children }: PropsWithChildren<unknown>) => (
+export const TextWithEmoji = ({ children }: PropsWithChildren) => (
   <span className="text-transparent text-shadow-sky">{children}</span>
 );
