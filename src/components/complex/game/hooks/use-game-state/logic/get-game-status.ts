@@ -1,4 +1,4 @@
-import { GameStatus, Moves, Player } from '@type/game.types';
+import type { GameStatus, Moves, Player } from '@type/game.types';
 
 export const getGameStatus = (move: Moves): GameStatus => {
   const winConditions = [

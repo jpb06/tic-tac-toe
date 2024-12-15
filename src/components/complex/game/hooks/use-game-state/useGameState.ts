@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import { Moves, Player, GameStatus as Status } from '@type/game.types';
+import type { Moves, Player, GameStatus as Status } from '@type/game.types';
 
 import { getGameStatus } from './logic/get-game-status';
 

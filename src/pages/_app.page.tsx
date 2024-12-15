@@ -5,4 +5,5 @@ function MyApp({ Component, pageProps }: AppProps) {
   return <Component {...pageProps} />;
 }
 
+// biome-ignore lint/style/noDefaultExport: next
 export default MyApp;
