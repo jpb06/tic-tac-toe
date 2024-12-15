@@ -9,6 +9,7 @@ type BoardProps = {
 export const Board = ({ onClick, moves }: BoardProps) => (
   <div className="grid grid-cols-3 gap-1 place-content-center px-10">
     {moves.map((value, index) => (
+      // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
       <Square key={index} onClick={() => onClick(index)} value={value} />
     ))}
   </div>

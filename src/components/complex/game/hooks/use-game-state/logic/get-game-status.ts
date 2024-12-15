@@ -1,4 +1,4 @@
-import { GameStatus, Moves, Player } from '@type/game.types';
+import type { GameStatus, Moves } from '@type/game.types';
 
 export const getGameStatus = (move: Moves): GameStatus => {
   const winConditions = [
@@ -16,7 +16,7 @@ export const getGameStatus = (move: Moves): GameStatus => {
     const [a, b, c] = condition;
 
     if (move[a] && move[a] === move[b] && move[a] === move[c]) {
-      return move[a] as Player;
+      return move[a];
     }
   }
 

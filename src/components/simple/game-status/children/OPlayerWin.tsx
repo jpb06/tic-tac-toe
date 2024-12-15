@@ -1,4 +1,4 @@
-import { TextWithEmoji } from "../..";
+import { TextWithEmoji } from '../..';
 
 export const OPlayerWin = () => (
   <>

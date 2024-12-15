@@ -1,4 +1,4 @@
-import { MatcherFunction } from '@testing-library/react';
+import type { MatcherFunction } from '@testing-library/react';
 
 export const textContentMatcher = (
   textMatch: string | RegExp,

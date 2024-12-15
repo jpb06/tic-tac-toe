@@ -1,5 +1,5 @@
 import { screen } from '@testing-library/react';
-import { describe, it, expect, vi } from 'vitest';
+import { describe, expect, it, vi } from 'vitest';
 
 import { appRender } from '@tests/renders/appRender';
 import type { Moves } from '@type/game.types';
@@ -48,11 +48,11 @@ describe('Board component', () => {
 
     expect(buttons).toHaveLength(9);
     await Promise.all(
-      moves.map(async (value, index) => {
+      moves.map(async (_value, index) => {
         await user.click(buttons[index]);
 
         expect(handleClick).toHaveBeenNthCalledWith(index + 1, index);
-      })
+      }),
     );
   });
 });

@@ -1,6 +1,6 @@
-import type { Player } from "@type/game.types";
+import type { Player } from '@type/game.types';
 
-import { TextWithEmoji } from "../..";
+import { TextWithEmoji } from '../..';
 
 type OngoingProps = {
   nextPlayer: Player;

@@ -1,6 +1,6 @@
-import type React from "react";
+import type React from 'react';
 
-import type { Player } from "@type/game.types";
+import type { Player } from '@type/game.types';
 
 type SquareProps = {
   onClick: (event: React.MouseEvent) => void;
