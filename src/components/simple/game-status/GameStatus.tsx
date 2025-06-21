@@ -9,7 +9,7 @@ type GameStatusProps = {
 
 export const GameStatus = ({ status, nextPlayer }: GameStatusProps) => (
   <div className="pb-5 px-10 text-center">
-    <div className="text-2xl h-16">
+    <div className="text-2xl h-24">
       {
         {
           Ongoing: <Ongoing nextPlayer={nextPlayer} />,

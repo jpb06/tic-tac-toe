@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 @layer utilities {
   .text-shadow-white {
     text-shadow: 0 0 0 white;

@@ -11,11 +11,11 @@ export const useGameState = () => {
 
   const handleMove = (index: number) => {
     if (status !== 'Ongoing') {
-      return;
+      return null;
     }
 
     if (moves[index] !== null) {
-      return;
+      return null;
     }
 
     setNextPlayer(nextPlayer === '⭕' ? '❌' : '⭕');
