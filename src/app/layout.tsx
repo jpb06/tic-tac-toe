@@ -12,11 +12,15 @@ export const metadata: Metadata = {
 };
 
 const RootLayout = ({ children }: Readonly<PropsWithChildren>) => (
-  <html lang="en">
+  <html lang="en" className="h-full">
     <head>
       <meta name="darkreader-lock" />
     </head>
-    <body className={inter.className}>{children}</body>
+    <body
+      className={`${inter.className} bg-gradient-to-bl from-indigo-600 via-sky-600 to-teal-600 text-sky-300`}
+    >
+      {children}
+    </body>
   </html>
 );
 
