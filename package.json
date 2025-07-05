@@ -23,7 +23,7 @@
     "sync-icons": "bun generateReadmeIcons -h 50"
   },
   "dependencies": {
-    "next": "15.3.4",
+    "next": "15.3.5",
     "react": "19.1.0",
     "react-dom": "19.1.0"
   },
