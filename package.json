@@ -30,7 +30,7 @@
   "devDependencies": {
     "@biomejs/biome": "2.0.4",
     "@next/env": "15.3.4",
-    "@swc/core": "1.12.5",
+    "@swc/core": "1.12.9",
     "@tailwindcss/postcss": "4.1.11",
     "@testing-library/dom": "10.4.0",
     "@testing-library/jest-dom": "6.6.3",
