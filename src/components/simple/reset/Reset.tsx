@@ -1,3 +1,5 @@
+import type { FunctionComponent } from 'react';
+
 import type { GameStatus } from '@type/game.types';
 
 type ResetButtonProps = {
@@ -5,7 +7,10 @@ type ResetButtonProps = {
   status: GameStatus;
 };
 
-export const Reset = ({ onClick, status }: ResetButtonProps) => {
+export const Reset: FunctionComponent<ResetButtonProps> = ({
+  onClick,
+  status,
+}) => {
   if (status === 'Ongoing') {
     return null;
   }

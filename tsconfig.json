@@ -1,52 +1,38 @@
 {
-  "compilerOptions": {
-    "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
-    "types": [
-      "node"
-    ],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "noEmit": true,
-    "esModuleInterop": true,
-    "module": "esnext",
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "jsx": "preserve",
-    "incremental": true,
-    "baseUrl": ".",
-    "paths": {
-      "@components/*": [
-        "src/components/*"
-      ],
-      "@type/*": [
-        "src/types/*"
-      ],
-      "@tests/*": [
-        "src/tests/*"
-      ]
-    },
-    "plugins": [
-      {
-        "name": "next"
-      }
-    ]
-  },
-  "include": [
-    "**/*.ts",
-    "**/*.tsx",
-    "next-env.d.ts",
-    "vite.config.mts",
-    ".next/types/**/*.ts"
-  ],
-  "exclude": [
-    "node_modules"
-  ]
+	"compilerOptions": {
+		"target": "es5",
+		"lib": ["dom", "dom.iterable", "esnext"],
+		"types": ["node"],
+		"allowJs": true,
+		"skipLibCheck": true,
+		"strict": true,
+		"forceConsistentCasingInFileNames": true,
+		"noEmit": true,
+		"esModuleInterop": true,
+		"module": "esnext",
+		"moduleResolution": "node",
+		"resolveJsonModule": true,
+		"isolatedModules": true,
+		"jsx": "preserve",
+		"incremental": true,
+		"baseUrl": ".",
+		"paths": {
+			"@components/*": ["src/components/*"],
+			"@type/*": ["src/types/*"],
+			"@tests/*": ["src/tests/*"]
+		},
+		"plugins": [
+			{
+				"name": "next"
+			}
+		]
+	},
+	"include": [
+		"**/*.ts",
+		"**/*.tsx",
+		"next-env.d.ts",
+		"vite.config.mts",
+		".next/types/**/*.ts"
+	],
+	"exclude": ["node_modules"]
 }
