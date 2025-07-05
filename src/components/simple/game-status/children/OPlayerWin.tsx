@@ -1,6 +1,8 @@
-import { TextWithEmoji } from '../..';
+import type { FunctionComponent } from 'react';
 
-export const OPlayerWin = () => (
+import { TextWithEmoji } from '../../text-with-emoji/TextWithEmoji';
+
+export const OPlayerWin: FunctionComponent = () => (
   <>
     <TextWithEmoji>⭕</TextWithEmoji> has won! Whooooo! 🔥
   </>

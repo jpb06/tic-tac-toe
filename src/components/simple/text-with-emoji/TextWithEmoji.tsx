@@ -1,5 +1,5 @@
-import type { PropsWithChildren } from 'react';
+import type { FunctionComponent, PropsWithChildren } from 'react';
 
-export const TextWithEmoji = ({ children }: PropsWithChildren) => (
-  <span className="text-transparent text-shadow-sky">{children}</span>
-);
+export const TextWithEmoji: FunctionComponent<PropsWithChildren> = ({
+  children,
+}) => <span className="text-transparent text-shadow-sky">{children}</span>;

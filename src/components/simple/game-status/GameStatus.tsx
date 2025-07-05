@@ -1,3 +1,5 @@
+import type { FunctionComponent } from 'react';
+
 import type { Player, GameStatus as Status } from '@type/game.types';
 
 import { GameOver, Ongoing, OPlayerWin, XPlayerWin } from './children';
@@ -7,7 +9,10 @@ type GameStatusProps = {
   nextPlayer: Player;
 };
 
-export const GameStatus = ({ status, nextPlayer }: GameStatusProps) => (
+export const GameStatus: FunctionComponent<GameStatusProps> = ({
+  status,
+  nextPlayer,
+}) => (
   <div className="pb-5 px-10 text-center">
     <div className="text-2xl h-24">
       {
