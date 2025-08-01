@@ -48,7 +48,7 @@
     "readme-package-icons": "1.2.2",
     "tailwindcss": "4.1.11",
     "ts-paths-transform": "2.0.6",
-    "typescript": "5.8.3",
+    "typescript": "5.9.2",
     "vite-tsconfig-paths": "5.1.4",
     "vitest": "3.2.4"
   }
