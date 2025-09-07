@@ -1,7 +1,8 @@
-import { defineConfig } from 'vitest/config';
-import tsconfigPaths from 'vite-tsconfig-paths';
 import react from '@vitejs/plugin-react';
+import tsconfigPaths from 'vite-tsconfig-paths';
+import { defineConfig } from 'vitest/config';
 
+// biome-ignore lint/style/noDefaultExport: vite
 export default defineConfig({
   plugins: [tsconfigPaths(), react()],
   test: {
