@@ -25,8 +25,8 @@
   },
   "dependencies": {
     "next": "15.5.7",
-    "react": "19.1.1",
-    "react-dom": "19.1.1"
+    "react": "19.2.1",
+    "react-dom": "19.2.1"
   },
   "devDependencies": {
     "@biomejs/biome": "2.2.4",
@@ -38,8 +38,8 @@
     "@testing-library/react": "16.3.0",
     "@testing-library/user-event": "14.6.1",
     "@types/node": "24.5.2",
-    "@types/react": "19.1.13",
-    "@types/react-dom": "19.1.9",
+    "@types/react": "19.2.7",
+    "@types/react-dom": "19.2.3",
     "@vitejs/plugin-react": "5.0.3",
     "@vitest/coverage-v8": "3.2.4",
     "@vitest/ui": "3.2.4",
