@@ -29,7 +29,7 @@
         "postcss": "8.5.6",
         "readme-package-icons": "1.2.2",
         "tailwindcss": "4.1.17",
-        "ts-paths-transform": "2.0.8",
+        "ts-paths-transform": "2.0.10",
         "typescript": "5.9.3",
         "vite-tsconfig-paths": "5.1.4",
         "vitest": "3.2.4",
@@ -751,7 +751,7 @@
 
     "tr46": ["tr46@6.0.0", "", { "dependencies": { "punycode": "^2.3.1" } }, "sha512-bLVMLPtstlZ4iMQHpFHTR7GAGj2jxi8Dg0s2h2MafAE4uSWF98FC/3MomU51iQAMf8/qDUbKWf5GxuvvVcXEhw=="],
 
-    "ts-paths-transform": ["ts-paths-transform@2.0.8", "", { "dependencies": { "picocolors": "1.1.1", "prettyjson": "1.2.5" } }, "sha512-TOuQIa7h6hkTXF6n/vP9lxnXkeFZ+3HeE73tUl27znaC7/5yoKkEj2knqmzK6f0aw+AK8PFd6m13UJzszIdXKw=="],
+    "ts-paths-transform": ["ts-paths-transform@2.0.10", "", { "dependencies": { "picocolors": "1.1.1", "prettyjson": "1.2.5" } }, "sha512-vrcejjABkk6rj7OwBpiny9KJ47s5DSATtmad13LWPqG8ZprUkg0mEtU9T093iv1WwhJlaWYIADrHLQBx8KVO+w=="],
 
     "tsconfck": ["tsconfck@3.1.6", "", { "peerDependencies": { "typescript": "^5.0.0" }, "optionalPeers": ["typescript"], "bin": { "tsconfck": "bin/tsconfck.js" } }, "sha512-ks6Vjr/jEw0P1gmOVwutM3B7fWxoWBL2KRDb1JfqGVawBmO5UsvmWOQFGHBPl5yxYz4eERr19E6L7NMv+Fej4w=="],
 
