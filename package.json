@@ -43,7 +43,7 @@
     "@vitejs/plugin-react": "5.1.2",
     "@vitest/coverage-v8": "3.2.4",
     "@vitest/ui": "3.2.4",
-    "autoprefixer": "10.4.22",
+    "autoprefixer": "10.4.23",
     "jsdom": "27.3.0",
     "postcss": "8.5.6",
     "readme-package-icons": "1.2.2",
