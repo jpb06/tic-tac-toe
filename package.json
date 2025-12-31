@@ -48,7 +48,7 @@
     "postcss": "8.5.6",
     "readme-package-icons": "1.2.2",
     "tailwindcss": "4.1.17",
-    "ts-paths-transform": "2.0.8",
+    "ts-paths-transform": "2.0.10",
     "typescript": "5.9.3",
     "vite-tsconfig-paths": "5.1.4",
     "vitest": "3.2.4"
